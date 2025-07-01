@@ -1,10 +1,10 @@
-data "aws_ami" "ubuntu_us_east_1" {
+/*data "aws_ami" "ubuntu_us_east_1" {
   most_recent = true
   filter {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-}
+} */
 
 # Generate the SSH Key Pair
 resource "tls_private_key" "ec2_key" {
